@@ -1,0 +1,90 @@
+pwd
+ls -la
+ls -l .ssh/
+ssh-keygen --help
+ssh-keygen -t ed25519
+cat /home/vagrant/.ssh/id_ed25519.pub
+ssh-keygen -t ed25519
+cat /home/vagrant/.ssh/id_ed25519.pub
+ll
+cd repogit/
+git clone git@github.com:guidoginiger/TP_AySO.git
+ll
+cd TP_AySO/
+ls -la
+cat unarchivo 
+git status
+pwd
+ls -l
+cat /etc/os-release 
+man man
+man grep
+pwd
+grep /home/vagrant/repogit/TP_AySO /etc/os-release 
+grep HOME_URL /etc/os-release 
+grep home_url /etc/os-release 
+grep -i Home_url /etc/os-release
+echo "Hola $(whoami)"
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt 
+git status
+git add .
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git config --global user.email "ginigerguido@gmail.com"
+git config --global user.name "guidoginiger"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuario.txt"
+git status
+man man
+cpuinfo
+cpu-info
+cat tail /proc/cpuinfo | grep "model name"
+tail /proc/cpuinfo | grep "model name"
+head /proc/cpuinfo | grep "model name"
+head /proc/cpuinfo | grep "model name" >> datos_usuario.txt
+cat datos_usuario.txt 
+git status
+git add .
+git commit -m "feat: Añadiendo informacion de CPU"
+git status
+/etc/passwd
+man 5 passwd
+man man
+grep -v nologin /etc/passwd > lista_ordenada
+sort lista_ordenada -t":" -k7
+grep -v nologin /etc/passwd | sort -t":" -k7 > lista_ordenada
+cat lista_ordenada 
+git status
+git add .
+git commit -m "ADD: Listado de usuarios ordenada"
+git status
+man -k "dump traffic"
+apropos "dump traffic"
+tcpdump
+whereis dump traffic
+where is dump
+whereis dump
+apropos "dump traffic" > comando_dump_net
+tcpdump
+echo apropos "dump traffic" >> comando_dump_net
+cat comando_dump_net 
+echo man -k "dump traffic" >> comando_dump_net 
+cat comando_dump_net 
+git status
+git add .
+git commit -m "ADD: Comando para Capturar y analizar el trafico de red"
+git status
+cat << CORTAR >> README.md
+Alumno: Guido-Giniger
+Division: 314
+Turno: Noche
+CORTAR
+
+cat README.md 
+git status
+git add .
+git commit -m "feat: Agrego informacion sobre alumno, division y turno"
+git status
+history -a $HOME/.bash_history
+ls -la $HOME
+history -a $HOME/.bash_history
