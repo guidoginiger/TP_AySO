@@ -1,1 +1,2 @@
 Usuario=vagrant
+model name	: Intel(R) Pentium(R) CPU G620 @ 2.60GHz
